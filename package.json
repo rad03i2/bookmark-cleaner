@@ -1,0 +1,17 @@
+{
+  "name": "bookmark-cleaner",
+  "version": "1.0.0",
+  "description": "Privacy-first CLI for auditing and cleaning Netscape-format browser bookmark exports.",
+  "type": "module",
+  "bin": {"bookmark-cleaner": "dist/cli.js"},
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/**/*.test.js",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/cli.js"
+  },
+  "engines": {"node": ">=20"},
+  "author": "Radwan Abdulhadi Ahmed (@rad03i2)",
+  "license": "MIT",
+  "devDependencies": {"@types/node": "^22.0.0", "typescript": "^5.6.0"}
+}
